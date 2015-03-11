@@ -1,0 +1,374 @@
+#portfolio {
+	width: 100%;
+}
+
+
+ul {
+list-style: none;
+padding: 0px;
+}
+
+body {
+
+background-color: transparentize($blue, 0.3);
+height: 100%;
+font-smoothing: antialiased;
+
+}
+
+.bg-fluid {
+background-image: url("img/pop_back_1.png");
+background-attachment: fixed;
+background-size: 30%;
+background-repeat: repeat-x;
+background-size: 13%;
+background-color: $tan;
+	@media screen and (max-width: $tablets) {
+	background-size: 25%;
+	}
+	@media screen and (max-width: $phones) {
+	background-size: 40%;
+	}
+	
+}
+
+
+
+
+.parallax_group {
+//z-index: -1;
+position: relative;
+height: 830px;
+transform-style: preserve-3d;
+}
+
+
+
+
+.parallax_layer {
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+}
+
+
+
+.parallax_layer-base {
+transform: translateZ(0);
+background-color: transparentize($blue, 0.3);
+height: 830px;
+}
+
+
+ 
+
+
+
+.intro {
+margin-top: 5%;
+float: left;
+//background-color: lighten($yellow, 25%);
+//border: solid 2px $tan;
+padding: 5%;
+//box-shadow: 16px -22px 300px 0px rgba(30,140,147,1);
+margin-bottom: 50px;
+	@media screen and (max-width: $tablets) {
+	padding: 10%;
+	}
+	img {
+ 	width: 25%;
+	margin-left: 37%;
+	margin-bottom: 10px;
+		@media screen and (max-width: $phones) {
+		width: 50%;
+ 		margin-left: 25%;
+		}
+	}
+	h1 {
+	font-size: 3rem;
+	//line-height: 50%;
+	font-family: $roon;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	text-align: center;
+	//font-weight: normal;
+	color: $purple;
+		@media screen and (max-width: $tablets) {
+		font-size: 1.6rem;
+		}
+		@media screen and (max-width: $phones) {
+		font-size: 1.5rem;
+		}
+	}
+	p {
+	color: $purple;
+	font-family: $roons;
+	text-align: center;
+	font-size: 1.5rem;
+	margin-bottom: 0px;
+		@media screen and (max-width: $phones) {
+		font-size: 1rem;
+		}
+	}
+	p.sub {
+	font-size: rem-calc(16px);
+	font-style: italic;
+	font-family: $roon;
+	color: $purple;
+ 	line-height: 80%;
+		@media screen and (max-width: $phones) {
+		font-size: rem-calc(12px);
+ 		}
+	}
+	.story {
+	color: $purple;
+	float: left;
+	font-size: rem-calc(18px);
+	font-family: $roon;
+	text-align: center;
+	font-style: italic;
+	margin-top: 30px;
+	}
+	.divider {
+	height: 3px;
+	background-color: $orange;
+	width: 10%;
+	margin-top: 40px;
+ 	float: left;
+	margin-left: 45%;
+	}
+	ul {
+	float: left;
+	margin-top: 30px;
+	margin-left: 20%;
+	width: 50%;
+		@media screen and (max-width: $tablets) {
+		margin-left: 25%;
+		}
+		@media screen and (max-width: $phones) {
+		width: 100%;
+		margin-left: 0%;
+		}
+	}
+	li {
+	float: left;
+	width: 15%;
+	margin-left: 10%;
+		@media screen and (max-width: $tablets) {
+		width: 10%;
+		}
+		img {
+		width: 100%;
+		}
+	}
+}
+
+
+
+//Capabilities
+
+
+h2 {
+font-size: 2.3125rem;
+margin-top: 50px;
+font-family: $roon;
+text-transform: uppercase;
+letter-spacing: 5px;
+//font-weight: normal;
+text-align: center;
+color: $purple;
+	@media screen and (max-width: $phones) {
+	font-size: 1.5rem;
+	}
+}
+
+
+
+.divider {
+height: 3px;
+background-color: $orange;
+width: 10%;
+margin-top: 0px;
+float: left;
+margin-left: 45%;
+}
+
+
+
+
+ul.tags {
+margin-top: 60px;
+float: left;
+color: $yellow;
+font-family: $roons;
+	li {
+	margin-bottom: 15px;
+	float: left;
+	padding: 3px 10px 5px 10px;
+	border: solid 2px $yellow;
+	border-radius: 15px;
+	font-size: rem-calc(18px);
+	margin-right: 10px;
+		@media screen and (max-width: $phones) {
+		padding: 1px 10px 4px 10px;
+		font-size: 1rem;
+		}
+	}
+}
+
+
+
+.skills {
+background-image: url("img/pop_back_2.png");
+background-attachment: fixed;
+background-size: 30%;
+background-repeat: repeat-x;
+background-size: 13%;
+background-color: $blue;
+height: auto;
+padding-bottom: 10%;
+zoom: 1;
+	@media screen and (max-width: $tablets) {
+	background-size: 40%;
+	}
+	@media screen and (max-width: $phones) {
+	background-size: 25%;
+	}
+}
+
+
+
+
+
+.work-section {
+width: 100%;
+z-index: 100;
+margin-top: 50px;
+	@media screen and (max-width: $tablets) {
+	}
+	@media screen and (max-width: $phones) {
+	}
+	ul {
+	float: left;
+	width: 100%;
+		li {
+		width: 25%;
+ 		float: left;
+		padding: 6% 0% 5% 0%;
+		-webkit-transition: all 0.25 ease-in-out;
+  		-moz-transition: all 0.25 ease-in-out;
+  		-ms-transition: all 0.25 ease-in-out;
+  		-o-transition: all 0.25 ease-in-out;
+  		transition:  ease-in-out;
+			@media screen and (max-width : 1024px) {
+			width: 50%;
+			}
+			@media screen and (max-width: $phones) {
+			width: 100%;
+			padding-top: 14%;
+			}
+			&:nth-child(1) {
+			background-color: lighten($blue, 5%);
+				&:hover h3 {
+				display: block;
+				}
+			}
+			&:nth-child(2) {
+			background-color: lighten($blue, 10%);
+				&:hover h3 {
+				display: block;
+				}
+			}
+			&:nth-child(3) {
+			background-color: lighten($blue, 15%);
+				&:hover h3 {
+				display: block;
+				}
+			}
+			&:nth-child(4) {
+			background-color: lighten($blue, 20%);
+				&:hover h3 {
+				display: block;
+				}
+				@media screen and (max-width: $phones) {
+				padding-top: 8%;
+				}
+				img {
+				width: 40%;
+				margin-left: 31%;
+				}
+			}
+			img {
+			width: 60%;
+			margin-left: 20%;
+ 			}
+		}
+	}
+}
+
+
+
+.work-section a:hover img {
+-webkit-transition: all 0.25s ease-in-out;
+-moz-transition: all 0.25s ease-in-out;
+-ms-transition: all 0.25s ease-in-out;
+-o-transition: all 0.25s ease-in-out;
+transition: all 0.25s ease-in-out;
+opacity: .3;
+margin-top: 25px;
+}
+
+
+
+.work-section a:hover {
+text-decoration: none;
+-webkit-transition: all 0.25s ease-in-out;
+-moz-transition: all 0.25s ease-in-out;
+-ms-transition: all 0.25s ease-in-out;
+-o-transition: all 0.25s ease-in-out;
+transition: all 0.25s ease-in-out;
+}
+
+ 
+
+h3 {
+z-index: 10;
+text-align: center;
+font-family: $roons;
+color: $purple;
+width: 50%;
+font-size: 1.125rem;
+//font-weight: normal;
+margin-top: -4%;
+margin-left: -12.5%;
+position: absolute;
+//font-size: rem-calc(28px);
+text-transform: uppercase;
+display: none;
+letter-spacing: 2px;
+	@media screen and (max-width: $tablets) {
+	margin-left: 1%;
+	}
+	@media screen and (max-width: $phones) {
+	margin-left: 25%;
+	}
+}
+
+
+
+footer {
+font-family: $roon;
+text-transform: uppercase;
+letter-spacing: 5px;
+padding-bottom: 15px;
+	p {
+	text-align: center;
+	color: $purple;
+	font-size: rem-calc(18px);
+		@media screen and (max-width: $phones) {
+		font-size: rem-calc(14px);
+		}
+	}
+}
